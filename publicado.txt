@@ -1,1 +1,1 @@
-GitHub Pages ativado. Painel publicado automaticamente.
+GitHub Pages ativado com GitHub Actions. Atualizado em 08/10/2026.
