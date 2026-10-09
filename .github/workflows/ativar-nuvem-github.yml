@@ -1,0 +1,21 @@
+name: Ativar nuvem privada
+on:
+  push:
+    paths:
+      - .github/workflows/ativar-nuvem-github.yml
+permissions:
+  contents: write
+jobs:
+  activate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          git show 4466caace9e542a093b92367344b72802aed46a8:index.html > index.html
+          echo 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 | base64 -d | gzip -d > cloud-github.js
+          printf '\n<script src="cloud-github.js"></script>\n' >> index.html
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add index.html cloud-github.js
+          git commit -m "Ativa nuvem privada pelo GitHub" || exit 0
+          git push
